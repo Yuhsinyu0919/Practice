@@ -23,7 +23,7 @@ body {
 }
 
 #store_logo {
-	width: 150px;
+	width: 170px;
 	height: 80px;
 	display: inline-block;
 	position: absolute;
@@ -44,11 +44,31 @@ h1 {
 	color: pink;
 }
 
+p.spread {
+	text-decoration: underline overline;  <!-- underline下底線 overline上底線 -->
+	word-spacing: 30px;  <!-- 字間放大 -->
+
+}
+
+p.tight {
+	word-spacing: -0.5em; <!-- 字間緊縮 -->
+}
+
+#context {
+	font-size: 2em;   <!-- 使用em設置字體大小，數字越小字型越小 -->
+	<!-- font-size: 100%   使用百分比表示，100%為一般字型，數字越小字型越小(ex:50%) -->
+
+}
+
 .paragraph {      <!-- .class名稱  -->
 	text-align: center;
 	background: pink;
 }
 
+.paragraph #KalobsLink {
+	color: blue;
+	a:link{ text- };
+}
 
 #side {           <!-- #id名稱  -->
 	color: blue;
@@ -59,3 +79,68 @@ h1 {
 	border: 1px dotted #000;
 } 
 
+table {
+	border: 3px  gray;
+	outline-style: dotted;
+}
+
+.nametable {   <!-- 表格文字 -->
+	text-align: center;
+	padding: 5px;
+	margin-left: 5px;    <!-- margin外邊距 上右下左 -->
+}
+
+.box {
+	margin-top: 10px;
+	padding: 0px;
+	border: 0px;
+	width: 100%;
+	height: 150px;
+	background: pink;
+	
+} 
+
+.outer {
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	background: blue;
+} 
+
+.inner {
+	
+	width: 50px;
+	height: 150px;
+	background: red;
+	
+}
+
+
+.pos_abs {
+	position: absolute;    <!-- absolute絕對定位 整個畫面的定位 -->
+	left: 100px;
+	top: 150px;
+}
+
+.pos_left {                 <!-- relative相對定位  在旁邊元素進行移動 -->
+	position: relative;
+	left: -20px;
+}
+
+.one {                    <!--  fixed -->
+	position: fixed;
+	left: 5px
+	top: 5px;
+}
+
+.two {
+	position: fixed;
+	left: 30px;
+	right: 5px;
+}
+
+.manypeople {            <!--  float  浮動 -->
+	width: 50%;
+	float: right; 
+	margin: 10px;        
+}
