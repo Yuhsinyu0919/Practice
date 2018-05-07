@@ -127,7 +127,7 @@ table {
 	left: -20px;
 }
 
-.one {                    <!--  fixed -->
+.one {                    <!--  fixed 固定定位，元素會相對瀏覽器的視窗來定位，即使頁面被捲動，元素仍然會在相同的位置上 -->
 	position: fixed;
 	left: 5px
 	top: 5px;
